@@ -1,0 +1,18 @@
+.title {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 7rem;
+  font-weight: 800;
+  /* letter-spacing: 5px; */
+}
+
+.subTitle {
+  margin: 0 auto;
+  padding: 0.7rem;
+  width: 40rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  background-color: yellow;
+}

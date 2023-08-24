@@ -1,0 +1,54 @@
+.header {
+  font-size: 1.7rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+}
+
+.logo {
+  background: #e9e6e6;
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 2rem 5rem;
+  cursor: pointer;
+}
+
+.order-avalible {
+  background: #e9e6e6;
+  width: 100%;
+  padding: 2.85rem 0;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.order-avalible:hover {
+  background: #4f4e4e;
+  color: #f8f5f5;
+  cursor: pointer;
+}
+
+.basket-container {
+  padding: 0 5rem;
+}
+
+.basket {
+  position: fixed;
+  z-index: 1;
+  top: 2.5rem;
+  right: 3.5rem;
+  width: 3.6rem;
+  height: 3.5rem;
+}
+
+.count {
+  z-index: 2;
+  font-weight: 600;
+  position: fixed;
+  color: yellow;
+  top: 3.7rem;
+  right: 4.7rem;
+}
