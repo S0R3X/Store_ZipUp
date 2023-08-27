@@ -1,6 +1,6 @@
 import Product from "../Product/Product";
 import styles from "./ShowProducts.module.css";
-import goods from "../../../data/db";
+import goods from "../../data/db";
 
 const ShowProducts = ({ sex, news, title }) => {
   const allGoods = [...goods.sneakers, ...goods.clothes, ...goods.accessories];
