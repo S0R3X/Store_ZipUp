@@ -25,10 +25,11 @@
   right: 0;
   width: 30vw;
   height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
   background: #ffffff;
   transform: translateX(30vw);
   transition: 0.3s;
+  padding-bottom: 3rem;
 }
 
 .content.active {

@@ -39,15 +39,55 @@ const Footer = () => {
       <div className={styles.info}>
         <ul className={styles.description}>
           <div className={styles.title}>За покупками</div>
-          <li>Новинки</li>
-          <li>Женщинам</li>
-          <li>Мужчинам</li>
+          <li
+            onClick={() => {
+              navigate("news");
+              window.scrollTo(0, 0);
+            }}
+          >
+            Новинки
+          </li>
+          <li
+            onClick={() => {
+              navigate("female");
+              window.scrollTo(0, 0);
+            }}
+          >
+            Женщинам
+          </li>
+          <li
+            onClick={() => {
+              navigate("male");
+              window.scrollTo(0, 0);
+            }}
+          >
+            Мужчинам
+          </li>
         </ul>
         <ul className={styles.description}>
           <div className={styles.title}>Магазин</div>
-          <li>О нас</li>
-          <li>Доставка и возрват</li>
-          <li>Подписаться</li>
+          <li
+            onClick={() => {
+              navigate("about");
+              window.scrollTo(0, 0);
+            }}
+          >
+            О нас
+          </li>
+          <li
+            onClick={() => {
+              window.location.href = "https://t.me/heeheehek";
+            }}
+          >
+            Доставка и возрват
+          </li>
+          <li
+            onClick={() => {
+              window.location.href = "https://t.me/zipuppoizon";
+            }}
+          >
+            Подписаться
+          </li>
         </ul>
       </div>
     </footer>

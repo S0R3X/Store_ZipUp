@@ -6,6 +6,7 @@ import Female from "./components/Female/Female";
 import Male from "./components/Male/Male";
 import News from "./components/News/News";
 import Order from "./components/Order/Order";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="male" element={<Male />} />
           <Route path="news" element={<News />} />
           <Route path="order" element={<Order />} />
+          <Route path="about" element={<About />} />
         </Route>
       </Routes>
     </div>
