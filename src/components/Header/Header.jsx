@@ -51,7 +51,9 @@ const Header = () => {
               className={styles.count}
               onClick={() => setActiveShoppingCart(true)}
             >
-              {products.length === 0 ? null : products.length}
+              {products.length === 0
+                ? null
+                : products.reduce((acc, product) => acc + product.count, 0)}
             </span>
           </div>
         </div>
