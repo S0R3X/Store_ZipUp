@@ -6,14 +6,18 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <footer className={styles.footer}>
-      <div
-        className={styles.logo}
-        onClick={() => {
-          navigate("/");
-          window.scrollTo(0, 0);
-        }}
-      >
-        ZipUp
+      <div className={styles.logoContainer}>
+        <div
+          className={styles.logo}
+          onClick={() => {
+            navigate("/");
+            window.scrollTo(0, 0);
+          }}
+        >
+          ZipUp
+        </div>
+        <div className={styles.ref}>popilovasd@mail.ru</div>
+        <div className={styles.ref}>Тел.: +7(903)570-23-47</div>
       </div>
       <div className={styles.map}>
         <YMaps>
