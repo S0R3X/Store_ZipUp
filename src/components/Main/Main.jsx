@@ -8,7 +8,7 @@ const Main = () => {
       <h1 className={styles.title}>ZipUp</h1>
       <h3 className={styles.subTitle}>Погрузись в мир моды</h3>
       <SelectProducts />
-      <ShowProducts />
+      <ShowProducts sex={"Unisex"} new={false} title={"Все товары"} />
     </main>
   );
 };
