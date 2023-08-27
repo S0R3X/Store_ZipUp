@@ -9,14 +9,21 @@ import { useNavigate, NavLink } from "react-router-dom";
 const Header = () => {
   const refScroll = useRef(null);
   const navigate = useNavigate();
+  const [clickScroll, setClickScroll] = useState(false);
 
   useEffect(() => {
-    refScroll.current = document.getElementById("refScroll");
-  });
+    setTimeout(() => {
+      refScroll.current = document.getElementById("refScroll");
+      if (clickScroll) {
+        refScroll.current?.scrollIntoView({ behavior: "smooth" });
+      }
+      setClickScroll(false);
+    }, 0);
+  }, [clickScroll]);
 
   const handleScroll = () => {
     navigate("/");
-    refScroll.current?.scrollIntoView({ behavior: "smooth" });
+    setClickScroll(true);
   };
 
   const products = useSelector((state) => state.products.products);
